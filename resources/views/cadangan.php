@@ -11,13 +11,10 @@
     <meta property="og:url" content>
     <meta property="og:image" content>
 
-    <link rel="shortcut icon" type="image/x-icon"
-        href="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/favicon.ico">
 
     <link href="https://ssc.ittelkom-sby.ac.id/assets-home/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
     @vite('resources/css/style.css')
 </head>
@@ -95,21 +92,11 @@
                 <div class="fixed-bottom" id="social-bottom">
                     <div class="mobile-social-icon">
                         <h5 class="mb-15 text-grey-4">Follow Us</h5>
-                        <a href="#"><img
-                                src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-facebook-white.png"
-                                alt></a>
-                        <a href="#"><img
-                                src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-twitter-white.png"
-                                alt></a>
-                        <a href="#"><img
-                                src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-instagram-white.png"
-                                alt></a>
-                        <a href="#"><img
-                                src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-pinterest-white.png"
-                                alt></a>
-                        <a href="#"><img
-                                src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-youtube-white.png"
-                                alt></a>
+                        <a href="#"><img src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-facebook-white.png" alt></a>
+                        <a href="#"><img src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-twitter-white.png" alt></a>
+                        <a href="#"><img src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-instagram-white.png" alt></a>
+                        <a href="#"><img src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-pinterest-white.png" alt></a>
+                        <a href="#"><img src="https://ssc.ittelkom-sby.ac.id/assets-home/imgs/theme/icons/icon-youtube-white.png" alt></a>
                     </div>
                 </div>
             </div>
@@ -154,8 +141,7 @@
                         <div class="card-body">
                             <strong>Kirimkan e-mail dengan menggunakan format dibawah ini</strong>
                             <br>
-                            <Strong>Penerima:</Strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                data-cfemail="ee9d9d8dae879a9a8b82858183c39d8c97c08f8dc0878a">[email&#160;protected]</a>
+                            <Strong>Penerima:</Strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee9d9d8dae879a9a8b82858183c39d8c97c08f8dc0878a">[email&#160;protected]</a>
                             <br>
                             <strong>Subjek:</strong> KODE UNIT_Permintaan (LAYANAN) Mahasiswa IT Telkom
                             Surabaya
@@ -225,8 +211,7 @@
                     <div class="carausel-4-columns" id="carausel-4-columns">
                         <div class="card-1" id="logistikBtn" onclick="switchLogistik()">
                             <figure class=" img-hover-scale overflow-hidden">
-                                <lord-icon id="imglog" src="https://cdn.lordicon.com/sbiheqdr.json"
-                                    trigger="hover" colors="primary:#121331,secondary:#aa0000"> </lord-icon>
+                                <lord-icon id="imglog" src="https://cdn.lordicon.com/sbiheqdr.json" trigger="hover" colors="primary:#121331,secondary:#aa0000"> </lord-icon>
                             </figure>
                             <h5><a>Logistik</a></h5>
                         </div>
@@ -253,25 +238,19 @@
                                 <div class="dashboard-menu">
                                     <ul class="nav flex-column" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab"
-                                                href="#penas" role="tab" aria-controls="dashboard"
-                                                aria-selected="true">
+                                            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#penas" role="tab" aria-controls="dashboard" aria-selected="false">
                                                 <i class="fa-regular fa-square-check"></i>&nbsp;
                                                 Peminjaman Asset
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="maintenance-tab" data-bs-toggle="tab"
-                                                href="#pemas" role="tab" aria-controls="maintenance"
-                                                aria-selected="false">
+                                            <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#pemas" role="tab" aria-controls="orders" aria-selected="false">
                                                 <i class="fa-regular fa-square-check"></i>&nbsp;
                                                 Pemeliharaan Asset Rusak / Hilang
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="online-loan-tab" data-bs-toggle="tab"
-                                                href="#online-loan" role="tab" aria-controls="online-loan"
-                                                aria-selected="false">
+                                            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#penas" role="tab" aria-controls="dashboard" aria-selected="false">
                                                 <i class="fa-regular fa-square-check"></i>&nbsp;
                                                 Peminjaman Secara Online
                                             </a>
@@ -281,77 +260,64 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="tab-content dashboard-content">
-                                    <div class="tab-pane fade active show" id="penas" role="tabpanel"
-                                        aria-labelledby="dashboard-tab">
+                                    <div class="tab-pane fade active show" id="penas" role="tabpanel" aria-labelledby="dashboard-tab">
                                         <div class="card">
                                             <div class="card-header bg-white">
                                                 <h5 class="mb-0">Peminjaman Asset </h5>
                                             </div>
                                             <div class="card-body">
                                                 <div class="text-center">
-                                                    <img class="img-layanan"
-                                                        src="assets-home/imgs/page/logistik/peminjaman.png"
-                                                        alt="KRS">
+                                                    <img class="img-layanan" src="assets-home/imgs/page/logistik/peminjaman.png" alt="KRS">
                                                 </div>
                                                 <strong>Deskripsi: </strong>
                                                 Layanan peminjaman asset seperti ruangan kuliah, aula rapat, serta
                                                 perlengkapan audio & video.
                                                 <br>
-                                                <strong>Durasi Pengerjaan:</strong> 3 - 5 Hari Kerja
+                                                <Strong>Durasi Pengerjaan:</Strong> 3 - 5 Hari Kerja
                                                 <br>
                                                 <strong>Requirement:</strong>
-                                                <ul>
-                                                    <li>Pastikan Anda memahami:
-                                                        <br>
-                                                        <a href="https://www.instagram.com/p/CwkIkLsPLY-/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
-                                                            target="_blank">https://www.instagram.com/p/CwkIkLsPLY-/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==</a>
-                                                        <a href="https://www.instagram.com/p/CwkIXh-PM5W/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
-                                                            target="_blank">https://www.instagram.com/p/CwkIXh-PM5W/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==</a>
-                                                        <a href="https://www.instagram.com/p/CwkIMidP8Xc/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
-                                                            target="_blank">https://www.instagram.com/p/CwkIMidP8Xc/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==</a>
-                                                    </li>
-                                                    <li>Dokumen F01 dan F02
-                                                        <br>
-                                                        <a href="https://drive.google.com/drive/folders/1CLtpLY5py6s6Cdt07myRYBHrztEG79E0"
-                                                            target="_blank">https://drive.google.com/drive/folders/1CLtpLY5py6s6Cdt07myRYBHrztEG79E0</a>
-                                                    </li>
-                                                </ul>
+                                                <li>Pastikan Anda memahami:
+                                                    <br>
+                                                    <a href="https://www.instagram.com/p/CwkIkLsPLY-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">https://www.instagram.com/p/CwkIkLsPLY-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==</a>
+                                                    <a href="https://www.instagram.com/p/CwkIXh-PM5W/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">https://www.instagram.com/p/CwkIXh-PM5W/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==</a>
+                                                    <a href="https://www.instagram.com/p/CwkIMidP8Xc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">https://www.instagram.com/p/CwkIMidP8Xc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==</a>
+                                                </li>
+                                                <br>
+                                                <li>Dokumen F01 dan F02
+                                                    <br>
+                                                    <a href="https://drive.google.com/drive/folders/1CLtpLY5py6s6Cdt07myRYBHrztEG79E0" target="_blank">https://drive.google.com/drive/folders/1CLtpLY5py6s6Cdt07myRYBHrztEG79E0</a>
+                                                </li>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pemas" role="tabpanel"
-                                        aria-labelledby="maintenance-tab">
+                                    <div class="tab-pane fade" id="pemas" role="tabpanel" aria-labelledby="orders-tab">
                                         <div class="card">
                                             <div class="card-header bg-white">
                                                 <h5 class="mb-0">Pemeliharaan Asset Rusak/Hilang </h5>
                                             </div>
                                             <div class="card-body">
                                                 <div class="text-center">
-                                                    <img class="img-layanan"
-                                                        src="assets-home/imgs/page/logistik/pemeliharaan.png"
-                                                        alt="KRS">
+                                                    <img class="img-layanan" src="assets-home/imgs/page/logistik/pemeliharaan.png" alt="KRS">
                                                 </div>
                                                 <strong>Deskripsi: </strong>
                                                 Layanan pemeliharaan asset mengenai kelistrikan, air, gedung, audio &
                                                 video yang rusak atau hilang.
                                                 <br>
-                                                <strong>Durasi Pengerjaan:</strong> - Hari Kerja
+                                                <Strong>Durasi Pengerjaan:</Strong> - Hari Kerja
                                                 <br>
-                                                <strong>Requirement:</strong> -
+                                                <strong>Requirement:</strong>
+                                                -
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="online-loan" role="tabpanel"
-                                        aria-labelledby="online-loan-tab">
+                                    <div class="tab-pane fade" id="pemas" role="tabpanel" aria-labelledby="orders-tab">
                                         <div class="card">
                                             <div class="card-header bg-white">
                                                 <h5 class="mb-0">Peminjaman Secara Online</h5>
                                             </div>
                                             <div class="card-body">
                                                 <div class="text-center">
-                                                    <img class="img-layanan"
-                                                        src="assets-home/imgs/page/logistik/pemeliharaan.png"
-                                                        alt="Peminjaman Logistik">
+                                                    <img class="img-layanan" src="assets-home/imgs/page/logistik/pemeliharaan.png" alt="Peminjaman Logistik">
                                                 </div>
                                                 <strong>Deskripsi: </strong>
                                                 Layanan peminjaman logistik untuk keperluan mahasiswa secara online.
@@ -368,8 +334,7 @@
                                                 <strong>Panduan Peminjaman Logistik Secara Online:</strong>
                                                 <ol>
                                                     <li><strong>Akses Halaman Peminjaman Logistik:</strong> Kunjungi
-                                                        situs resmi layanan peminjaman logistik di <a
-                                                            href="https://ssc.ittelkom-sby.ac.id/">https://ssc.ittelkom-sby.ac.id/</a>.
+                                                        situs resmi layanan peminjaman logistik di <a href="https://ssc.ittelkom-sby.ac.id/">https://ssc.ittelkom-sby.ac.id/</a>.
                                                     </li>
                                                     <li><strong>Login ke Akun Anda:</strong> Masukkan username dan
                                                         password Anda, atau daftar jika belum memiliki akun.</li>
@@ -449,8 +414,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 deal-co">
-                        <div class="deal wow fadeIn animated bg-white"
-                            style="background-image: url('assets-home/imgs/banner/device-academic.png');">
+                        <div class="deal wow fadeIn animated bg-white" style="background-image: url('assets-home/imgs/banner/device-academic.png');">
                         </div>
                     </div>
                 </div>
@@ -473,8 +437,7 @@
                             <strong>Phone: </strong>(+6231) 8280800
                         </p>
                         <p class="wow fadeIn animated">
-                            <strong>Email: </strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                data-cfemail="37444454775e4343525b5c585a1a44554e195654195e53">[email&#160;protected]</a>
+                            <strong>Email: </strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="37444454775e4343525b5c585a1a44554e195654195e53">[email&#160;protected]</a>
                         </p>
                     </div>
                 </div>
@@ -530,9 +493,7 @@
     <script src="https://ssc.ittelkom-sby.ac.id/assets-home/js/plugins/jquery.vticker-min.js"></script>
     <script src="https://ssc.ittelkom-sby.ac.id/assets-home/js/plugins/jquery.theia.sticky.js"></script>
     <script src="https://ssc.ittelkom-sby.ac.id/assets-home/js/plugins/jquery.elevatezoom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://ssc.ittelkom-sby.ac.id/assets-home/js/main.js"></script>
     <script src="https://ssc.ittelkom-sby.ac.id/assets-home/js/shop.js"></script>
@@ -668,10 +629,7 @@
 
         gtag('config', 'G-DQKR17FFW0');
     </script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
-        integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
-        data-cf-beacon='{"rayId":"8840ff6fbc375de7","r":1,"version":"2024.4.1","token":"50234156d30d44129c40e202cd5b6918"}'
-        crossorigin="anonymous"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"8840ff6fbc375de7","r":1,"version":"2024.4.1","token":"50234156d30d44129c40e202cd5b6918"}' crossorigin="anonymous"></script>
 </body>
 
 
