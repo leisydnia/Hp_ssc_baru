@@ -5,7 +5,7 @@
         <div class="flex justify-between flex-wrap md:flex-nowrap items-center pt-3 pb-2 mb-3 border-b dark:text-white">
             <h1 class="text-3xl font-bold">Buat peminjaman</h1>
         </div>
-        <form action="#" method="POST">
+        <form action="/peminjaman/store/asset2" method="POST">
             @csrf
 
             <div id="asset-section">
@@ -21,11 +21,11 @@
                             <input type="text" name="assets[0][asset_search]" onkeyup="filterFunction(this)"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Search for Asset" />
-                            <input type="hidden" name="assets.0.asset_id" />
+                            <input type="hidden" name="assets[0][asset_id]" />
                             <div class="dropdown-content" id="asset-dropdown-0">
                                 <!-- Dynamic options will be inserted here -->
                             </div>
-                            @error('assets.0.asset_id')
+                            @error('assets[0][asset_id]')
                                 <div class="text-red-500 text-lg ms-2"><small>{{ $message }}</small></div>
                             @enderror
                         </div>
@@ -99,42 +99,42 @@
             const newAsset = document.createElement('div');
             newAsset.className = 'asset-item mb-5';
             newAsset.innerHTML = `
-            <div class="mb-5">
-                <label for="asset_id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asset</label>
-                <div class ="dropdown w-full">
-                    <input type="text" name="assets[${assetCount}][asset_search]" onkeyup="filterFunction(this)"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Search for Asset" />
-                    <input type="hidden" name="assets[${assetCount}][asset_id]" />
-                    <div class="dropdown-content" id="asset-dropdown-${assetCount}">
-                        <!-- Dynamic options will be inserted here -->
+                <div class="mb-5">
+                    <label for="asset_id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asset</label>
+                    <div class ="dropdown w-full">
+                        <input type="text" name="assets[${assetCount}][asset_search]" onkeyup="filterFunction(this)"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search for Asset" />
+                        <input type="hidden" name="assets[${assetCount}][asset_id]" />
+                        <div class="dropdown-content" id="asset-dropdown-${assetCount}">
+                            <!-- Dynamic options will be inserted here -->
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="mb-5">
-                <label for="start_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Start Date</label>
-                <input type="datetime-local" name="assets[${assetCount}][start_date]"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-            </div>
-            <div class="mb-5">
-                <label for="end_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">End Date</label>
-                <input type="datetime-local" name="assets[${assetCount}][end_date]"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-            </div>
-            <div class="mb-5">
-                <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                <textarea name="assets[${assetCount}][description]"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Description"></textarea>
-            </div>
-            <div class="mb-5">
-                <label for="num" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of Assets</label>
-                <input type="number" name="assets[${assetCount}][num]"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Number of Assets" />
-            </div>
-            <button type="button" class="remove-asset text-red-600 dark:text-red-500 hover:underline">Remove</button>
-        `;
+                <div class="mb-5">
+                    <label for="start_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Start Date</label>
+                    <input type="datetime-local" name="assets[${assetCount}][start_date]"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                </div>
+                <div class="mb-5">
+                    <label for="end_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">End Date</label>
+                    <input type="datetime-local" name="assets[${assetCount}][end_date]"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                </div>
+                <div class="mb-5">
+                    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                    <textarea name="assets[${assetCount}][description]"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Description"></textarea>
+                </div>
+                <div class="mb-5">
+                    <label for="num" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of Assets</label>
+                    <input type="number" name="assets[${assetCount}][num]"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Number of Assets" />
+                </div>
+                <button type="button" class="remove-asset text-red-600 dark:text-red-500 hover:underline">Remove</button>
+            `;
             assetSection.appendChild(newAsset);
 
             // Add event listener for the new remove button

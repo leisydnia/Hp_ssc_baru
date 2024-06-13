@@ -22,9 +22,9 @@ class AuthController extends Controller
             'username' => 'required|max:255',
             'password' => 'required|max:255'
         ]);
-
         try {
-            $response = Http::post( env('API_BASE_URL') . 'students/login', $data);
+            $response = Http::post(env('API_BASE_URL') . 'students/login', $data);
+
             if ($response->successful()) {
                 $users = $response->json();
                 $users = $response['data'];
