@@ -1,31 +1,29 @@
 <?php
 
+use App\Http\Controllers\AssetController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'loginStore'])->name('login.store');
 
-// routes/web.php
+Route::get('/peminjaman/asset', [AssetController::class, 'index']);
+Route::get('/peminjaman/asset2', [AssetController::class, 'index2']);
 
-Route::get('borrowings/{id}', 'BorrowingController@show')->name('show');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
 
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@login');
+Route::get('/home', [HomeController::class, 'home'])->name('home');
 
-Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-Route::get('/about', function () {
-    return view('about'); // Pastikan view ini sesuai dengan view "about" yang Anda buat.
-})->name('about');
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+// // Route::get('borrowings/{id}', 'BorrowingController@show')->name('show');
+
+// Route::get('/about', function () {
+//     return view('about'); // Pastikan view ini sesuai dengan view "about" yang Anda buat.
+// })->name('about');
+
